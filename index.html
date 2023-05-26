@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú del día</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap">
+
+</head>
+
+<body>    
+    <div class="page-container">
+        <header>
+            <div class="image-container">
+                <div class="left-image">
+                    <img src="sol.png" alt="">
+                </div>
+                <div class="right-image">
+                    <img src="LogoSut36.png" alt="">
+                </div>
+            </div> 
+            <h1>Menú Día 
+              <select id="dia"> 
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+              </select> <span class="dropdown-arrow"></span>
+          </h1>
+                         
+        </header>
+        <section class="almuerzo">
+            <h3>Almuerzo</h3>
+            <ul>
+                <li>Ensalada</li>
+                <li>Cordero con Puré</li>
+                <li>Arroz con Leche</li>
+            </ul>
+        </section>
+        <section class="cena">
+            <h3>Cena</h3>
+            <ul>
+                <li>Sopa</li>
+                <li>Carne Asada con Papas</li>
+                <li>Panqueques</li>
+            </ul>
+        </section>
+        <footer>
+            <button class="print-button" id="imprimir" onclick="window.print()">
+                <span class="material-symbols-sharp">
+                    print
+                </span>
+            </button>
+            
+        </footer>
+    </div>
+    <!-- src="menuchat.js" -->
+    <script src="index.js">
+
+    </script>
+    
+
+
+    
+        
+   
+    </body>
+  </html>

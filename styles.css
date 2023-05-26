@@ -1,0 +1,188 @@
+@media print {
+    @page {
+       size: auto;   /* ajustar el tamaño de la página al contenido */
+       margin: 0mm; } /* eliminar los márgenes predeterminados */
+    
+
+   /* ocultar el encabezado predeterminado */
+    @top-center {
+       content: none;
+   }
+}
+
+.page-container {
+ width: 85%; /* ajusta el ancho según tus necesidades */
+ height: 85%;
+ margin: 0 auto; /* centra el contenedor horizontalmente */
+ margin-top: 40px;
+ /* border: 2px solid black; */
+ box-sizing: border-box; /* incluye el borde en el ancho total del contenedor */
+ padding-bottom: 40px; /* agrega un relleno interno para separar el contenido del borde */
+ margin-bottom: 40px; /* agrega un margen inferior para separar el contenedor del borde inferior de la página */
+}
+body {
+   
+   font-family: 'Ubuntu', monospace, sans-serif;
+   font-size: 30px;
+   margin: 0;
+   padding: 0;
+   border: 2px solid black;
+   text-align: center;
+   line-height: 1.3;
+}
+
+
+ 
+
+#container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   font-size: 30px;
+}
+
+header {
+   background-color: #ffffff;
+   color: #000000;
+   padding: 20px;
+   text-align: center;
+}
+
+.image-container {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr); /* 2 columnas de ancho igual */
+ }
+
+ .left-image {
+   justify-self: start; /* alinea la imagen a la izquierda */
+   /* width: 20%; */
+   /* height: 150px; */
+   
+ }
+
+ .right-image {
+   justify-self: end; /* alinea la imagen a la derecha */
+   
+       width: 200px;
+       height: 150px;
+       object-fit: cover;
+       margin-right: 10px;
+       margin-top: 50px;
+     
+ }
+
+main {
+   margin: 20px;
+   text-align: center;
+}
+
+section {
+   margin-bottom: 50px;
+}
+
+h2 {
+   margin-bottom: 20px;
+   text-decoration: underline;
+}
+
+.header-container {
+ display: flex;
+ justify-content: center;
+}
+
+.header-container img {
+ width: 20%;
+ height: auto;
+ display: block;
+}
+
+select {
+   font-size: 60px;
+   text-align: center;
+   border: none;
+   -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+   
+ }
+ 
+
+
+ .dropdown-arrow {
+     display: inline-block;
+     width: 0;
+     height: 0;
+     margin-left: 5px;
+     vertical-align: middle;
+     border-top: 4px solid #555;
+     border-right: 4px solid transparent;
+     border-left: 4px solid transparent;
+     transform: rotate(0deg);
+     transition: transform 0.2s ease-in-out;
+ }
+
+ #dia:focus + .dropdown-arrow,
+ #dia:hover + .dropdown-arrow {
+     transform: rotate(180deg);
+ }
+
+ select,
+ nav ul li a {
+   /* font-size: 45px; */
+   font-weight: bold;
+ }
+ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+li {
+   margin-bottom: 10px;
+}
+
+ul li::before {
+   content: "* ";
+ }
+ 
+ ul li::after {
+   content: ".";
+ }
+footer {
+
+}
+
+button {
+   margin-top: 20px;
+}
+
+
+/* Estilos para el botón de impresión */
+.print-button {
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   background-color: #FFF;
+   border: none;
+   border-radius: 50%;
+   width: 50px;
+   height: 50px;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+   cursor: pointer;
+ }
+
+ 
+
+ .print-icon {
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   background-image: url("https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/print-512.png");
+   background-repeat: no-repeat;
+   background-size: 100%;
+   margin: 0 10px;
+   vertical-align: middle;
+ }
+ 
